@@ -79,7 +79,7 @@ source kvm.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+#######################################################################
 
 ## Tools
 alias st='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl' 
