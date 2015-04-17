@@ -45,7 +45,7 @@ ZSH_THEME="simple"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras encode64)
+plugins=(git git-extras sublime encode64)
 
 # User configuration
 
@@ -53,6 +53,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+
+# .NET Version Manager (DNVM f.k.a. KVM)
+source kvm.sh
+#source dnvm.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -105,3 +109,6 @@ alias pyserver='python -m SimpleHTTPServer 4000'
 
 ## Mobile iOS testing
 alias ios='open /Applications/Xcode.app/Contents/Applications/iOS\ Simulator.app'
+
+#show ports for processes
+alias openports='sudo lsof -i -n -P | grep TCP'
