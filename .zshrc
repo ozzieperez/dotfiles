@@ -48,9 +48,6 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 alias st='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl' 
 
 ## Shortcuts
-alias ..='cd ..'
-alias ...='cd ../../'
-alias ....='cd ../../../'
 alias lsa='ls -al'
 
 ## Edit things
