@@ -25,11 +25,10 @@ source kvm.sh
 #source dnvm.sh
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
+# Preferred editor for local and remote sessions
+export EDITOR='vim'
+export USE_EDITOR=$EDITOR
+export VISUAL=$EDITOR
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -48,12 +47,14 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 alias st='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl' 
 
 ## Shortcuts
-alias lsa='ls -al'
+
 
 ## Edit things
+alias editgitignore='st ~/.gitignore_global'
 alias editgit='subl ~/.gitconfig'
 alias editbash='subl ~/.bash_profile'
 alias editzsh='subl ~/.zshrc'
+alias edittmux='vim ~/.tmux.conf'
 alias ohmyzsh="subl ~/.oh-my-zsh"
 
 ## OSX Helpers
