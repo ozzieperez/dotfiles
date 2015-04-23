@@ -51,11 +51,12 @@ alias st='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
 ## Edit things
 alias editgitignore='st ~/.gitignore_global'
-alias editgit='subl ~/.gitconfig'
-alias editbash='subl ~/.bash_profile'
-alias editzsh='subl ~/.zshrc'
-alias edittmux='vim ~/.tmux.conf'
-alias ohmyzsh="subl ~/.oh-my-zsh"
+alias editgit='st ~/.gitconfig'
+alias editbash='st ~/.bash_profile'
+alias editzsh='st ~/.zshrc'
+alias edittmux='st ~/.tmux.conf'
+alias edithosts='st /private/etc/hosts'
+alias ohmyzsh="st ~/.oh-my-zsh"
 
 ## OSX Helpers
 alias showHidden='defaults write com.apple.finder AppleShowAllFiles YES'
